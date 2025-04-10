@@ -1,0 +1,899 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <title></title>
+ <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c439bdbc7bade3d85af3b90e9e69c30ebc87445f/commons/img/logo.png">
+ <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c439bdbc7bade3d85af3b90e9e69c30ebc87445f/commons/img/logo.png">
+ <link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@78fa5a2421587b8228150e93142e5ba97178e85b/spark/css/spark-style.css" rel="stylesheet" />
+ <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+ <script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@78fa5a2421587b8228150e93142e5ba97178e85b/spark/js/jsontree.js"></script>
+ <style></style>
+</head>
+<body class="spa  standard">
+ <div class="app">
+  <div class="layout">
+   <div class="header navbar">
+ <div class="vheader">
+  <div class="nav-logo">
+   <a href="#">
+	 <div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c43b89d03a7c43dae8bb8f0f078bad1997af6b3b/commons/img/logo.png')"></div>
+   </a>
+  </div>
+  <ul class="nav-left">
+   <li class="search-box">
+	<a class="search-toggle" href="#"><i class="search-icon fa fa-search"></i><i class="search-icon-close fa fa-close"></i></a>
+   </li>
+   <li class="search-input">
+    <input id="search-tests" class="form-control" type="text" placeholder="Search...">
+   </li>
+  </ul>
+  <ul class="nav-right">
+   <li class="m-r-10"><a href="#"><span class="badge badge-primary"></span></a></li>
+   <li class="m-r-10">
+    <a href="#"><span class="badge badge-primary">10-04-2025 00:10:08</span></a>
+   </li>
+  </ul>
+ </div>
+</div>
+   <div class="side-nav">
+ <div class="side-nav-inner">
+  <ul class="side-nav-menu">
+   <li class="nav-item dropdown" onclick="toggleView('test-view')">
+    <a id="nav-test" class="dropdown-toggle" href="#">
+     <span class="ico"><i class="fa fa-list"></i></span>
+    </a>
+   </li>
+   <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+    <a id="nav-dashboard" class="dropdown-toggle" href="#">
+     <span class="ico"><i class="fa fa-bar-chart"></i></span>
+    </a>
+   </li>
+  </ul>
+ </div>
+</div>
+
+   <div class="vcontainer">
+    <div class="main-content">
+     
+
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+      <ul class="tools pull-left">
+        <li><a href="#"><span class="font-size-14">Tests</span></a></li>
+      </ul>
+      <ul class="tools text-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+          <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+ <a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>             <div class="dropdown-divider"></div>
+            <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item" status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Test_AddCurrencyAndVerify</p>
+            <p class="text-sm">
+              <span>00:10:08</span> / <span>7091.79 ms</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-fail">Test_AddCurrencyAndVerify</h5>
+                  <span class='badge badge-success'>10-04-2025 00:10:08</span>
+                  <span class='badge badge-danger'>10-04-2025 00:10:15</span>
+                  <span class='badge badge-default'>7091.79 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>Apr 10, 2025 00:10:15</td>
+        <td>
+  Currency was not added successfully.
+  Expected: True
+  But was:  False
+        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="fail" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Test_AddProgressNoteForPatient</p>
+            <p class="text-sm">
+              <span>00:10:15</span> / <span>2478.12 ms</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-fail">Test_AddProgressNoteForPatient</h5>
+                  <span class='badge badge-success'>10-04-2025 00:10:15</span>
+                  <span class='badge badge-danger'>10-04-2025 00:10:17</span>
+                  <span class='badge badge-default'>2478.12 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>Apr 10, 2025 00:10:17</td>
+        <td>
+  Success message does not match.
+  Expected: String containing "Progress Note Template added."
+  But was:  " "
+        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="fail" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Test_CaptureInventoryRequisitionScreenshot</p>
+            <p class="text-sm">
+              <span>00:10:17</span> / <span>2008.98 ms</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-fail">Test_CaptureInventoryRequisitionScreenshot</h5>
+                  <span class='badge badge-success'>10-04-2025 00:10:17</span>
+                  <span class='badge badge-danger'>10-04-2025 00:10:19</span>
+                  <span class='badge badge-default'>2008.98 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>Apr 10, 2025 00:10:19</td>
+        <td>
+  Expected: True
+  But was:  False
+        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="fail" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Test_EditTDSForEmployee</p>
+            <p class="text-sm">
+              <span>00:10:19</span> / <span>2150.93 ms</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-fail">Test_EditTDSForEmployee</h5>
+                  <span class='badge badge-success'>10-04-2025 00:10:19</span>
+                  <span class='badge badge-danger'>10-04-2025 00:10:21</span>
+                  <span class='badge badge-default'>2150.93 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>Apr 10, 2025 00:10:21</td>
+        <td>
+  TDS value was not updated successfully.
+  Expected: True
+  But was:  False
+        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="fail" test-id="5"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Test_HandleOtBookingAlert</p>
+            <p class="text-sm">
+              <span>00:10:21</span> / <span>2459.03 ms</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-fail">Test_HandleOtBookingAlert</h5>
+                  <span class='badge badge-success'>10-04-2025 00:10:21</span>
+                  <span class='badge badge-danger'>10-04-2025 00:10:24</span>
+                  <span class='badge badge-default'>2459.03 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>Apr 10, 2025 00:10:24</td>
+        <td>
+System.ArgumentException : Expected: IEnumerable But was: null (Parameter 'actual')        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="fail" test-id="6"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Test_TogglePriceCategoryStatus</p>
+            <p class="text-sm">
+              <span>00:10:24</span> / <span>2078.86 ms</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-fail">Test_TogglePriceCategoryStatus</h5>
+                  <span class='badge badge-success'>10-04-2025 00:10:24</span>
+                  <span class='badge badge-danger'>10-04-2025 00:10:26</span>
+                  <span class='badge badge-default'>2078.86 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>Apr 10, 2025 00:10:26</td>
+        <td>
+  Expected string length 1 but was 10. Strings differ at index 0.
+  Expected: " "
+  But was:  "Activated."
+  -----------^
+        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="fail" test-id="7"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Test_UploadProfilePicture</p>
+            <p class="text-sm">
+              <span>00:10:26</span> / <span>1934.42 ms</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-fail">Test_UploadProfilePicture</h5>
+                  <span class='badge badge-success'>10-04-2025 00:10:26</span>
+                  <span class='badge badge-danger'>10-04-2025 00:10:28</span>
+                  <span class='badge badge-default'>1934.42 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>Apr 10, 2025 00:10:28</td>
+        <td>
+  Image was not uploaded successfully.
+  Expected: True
+  But was:  False
+        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="fail" test-id="8"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Test_VerifyFieldLevelErrorMessage</p>
+            <p class="text-sm">
+              <span>00:10:28</span> / <span>2628.48 ms</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-fail">Test_VerifyFieldLevelErrorMessage</h5>
+                  <span class='badge badge-success'>10-04-2025 00:10:28</span>
+                  <span class='badge badge-danger'>10-04-2025 00:10:31</span>
+                  <span class='badge badge-default'>2628.48 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>Apr 10, 2025 00:10:31</td>
+        <td>
+  Error message was not dislpayed successfully.
+  Expected: True
+  But was:  False
+        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="fail" test-id="9"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Test_VerifyLogoutFunctionality</p>
+            <p class="text-sm">
+              <span>00:10:31</span> / <span>2156.37 ms</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-fail">Test_VerifyLogoutFunctionality</h5>
+                  <span class='badge badge-success'>10-04-2025 00:10:31</span>
+                  <span class='badge badge-danger'>10-04-2025 00:10:33</span>
+                  <span class='badge badge-default'>2156.37 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>Apr 10, 2025 00:10:33</td>
+        <td>
+  Logout message was not dislpayed successfully.
+  Expected: True
+  But was:  False
+        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="fail" test-id="10"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Test_VerifyMandatoryFieldsWarning</p>
+            <p class="text-sm">
+              <span>00:10:33</span> / <span>1998.84 ms</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-fail">Test_VerifyMandatoryFieldsWarning</h5>
+                  <span class='badge badge-success'>10-04-2025 00:10:33</span>
+                  <span class='badge badge-danger'>10-04-2025 00:10:35</span>
+                  <span class='badge badge-default'>1998.84 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>Apr 10, 2025 00:10:35</td>
+        <td>
+  Expected: null
+  But was:  "Please fill all the mandatory fields."
+        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="fail" test-id="11"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Test_VerifyNavigationBetweenSubmodules</p>
+            <p class="text-sm">
+              <span>00:10:35</span> / <span>1988.88 ms</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-fail">Test_VerifyNavigationBetweenSubmodules</h5>
+                  <span class='badge badge-success'>10-04-2025 00:10:35</span>
+                  <span class='badge badge-danger'>10-04-2025 00:10:37</span>
+                  <span class='badge badge-default'>1988.88 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>Apr 10, 2025 00:10:37</td>
+        <td>
+  User was not navigated successfully.
+  Expected: True
+  But was:  False
+        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="fail" test-id="12"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Test_VerifyPatientOverview</p>
+            <p class="text-sm">
+              <span>00:10:37</span> / <span>2085.04 ms</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-fail">Test_VerifyPatientOverview</h5>
+                  <span class='badge badge-success'>10-04-2025 00:10:37</span>
+                  <span class='badge badge-danger'>10-04-2025 00:10:39</span>
+                  <span class='badge badge-default'>2085.04 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>Apr 10, 2025 00:10:39</td>
+        <td>
+  Patient name does not match.
+  Expected string length 11 but was 1. Strings differ at index 0.
+  Expected: "devid8 roy8"
+  But was:  " "
+  -----------^
+        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="fail" test-id="13"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Test_VerifyTooltipText</p>
+            <p class="text-sm">
+              <span>00:10:39</span> / <span>2313.41 ms</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-fail">Test_VerifyTooltipText</h5>
+                  <span class='badge badge-success'>10-04-2025 00:10:39</span>
+                  <span class='badge badge-danger'>10-04-2025 00:10:41</span>
+                  <span class='badge badge-default'>2313.41 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>Apr 10, 2025 00:10:41</td>
+        <td>
+System.ArgumentException : Expected: IEnumerable But was: null (Parameter 'actual')        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="fail" test-id="14"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Test_VerifyUserProfileNavigation</p>
+            <p class="text-sm">
+              <span>00:10:41</span> / <span>2050.67 ms</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-fail">Test_VerifyUserProfileNavigation</h5>
+                  <span class='badge badge-success'>10-04-2025 00:10:41</span>
+                  <span class='badge badge-danger'>10-04-2025 00:10:43</span>
+                  <span class='badge badge-default'>2050.67 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>Apr 10, 2025 00:10:43</td>
+        <td>
+  User Profile page did not load as expected.
+  Expected: "User Profile"
+  But was:  null
+        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="fail" test-id="15"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">TestVerifyVisitTypeDropdown</p>
+            <p class="text-sm">
+              <span>00:10:43</span> / <span>2084.5 ms</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-fail">TestVerifyVisitTypeDropdown</h5>
+                  <span class='badge badge-success'>10-04-2025 00:10:43</span>
+                  <span class='badge badge-danger'>10-04-2025 00:10:45</span>
+                  <span class='badge badge-default'>2084.5 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>Apr 10, 2025 00:10:45</td>
+        <td>
+  Expected: True
+  But was:  False
+        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="test-content scrollable">
+    <div class="test-content-tools">
+      <ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+    </div>
+    <div class="test-content-detail"><div class="detail-body"></div></div>
+  </div>
+</div>
+
+     
+
+<div class="container-fluid p-4 view dashboard-view">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0">Started</p>
+          <h3>10-04-2025 00:10:08</h3>
+      </div></div>
+    </div>
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0">Ended</p>
+          <h3>10-04-2025 00:10:45</h3>
+      </div></div>
+    </div>
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0 text-pass">Tests Passed</p>
+          <h3>0</h3>
+      </div></div>
+    </div>
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0 text-fail">Tests Failed</p>
+          <h3>15</h3>
+      </div></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h6 class="card-title">Tests</h6>
+        </div>
+        <div class="card-body">
+          <div class="">
+            <canvas id='parent-analysis' width='115' height='90'></canvas>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div><small data-tooltip='0%'>
+            <b>0</b> tests passed
+            </small>
+          </div>
+          <div>
+            <small data-tooltip='1%'><b>15</b> tests failed, 
+            <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h6 class="card-title">Log events</h6>
+        </div>
+        <div class="card-body">
+          <div class="">
+            <canvas id='events-analysis' width='115' height='90'></canvas>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div><small data-tooltip='0%'><b>0</b> events passed</small></div>
+          <div>
+            <small data-tooltip='1%'><b>15</b> events failed, 
+            <b data-tooltip='%'>0</b> others
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row"><div class="col-md-12">
+    <div class="card"><div class="card-header"><p>Timeline</p></div>
+      <div class="card-body pt-0"><div>
+        <canvas id="timeline" height="120"></canvas>
+      </div></div>
+    </div>
+  </div></div>
+  <script>
+	var timeline = { "Test_AddCurrencyAndVerify":7091.7852,"Test_AddProgressNoteForPatient":2478.1209,"Test_CaptureInventoryRequisitionScreenshot":2008.9837,"Test_EditTDSForEmployee":2150.9347,"Test_HandleOtBookingAlert":2459.0315,"Test_TogglePriceCategoryStatus":2078.8646,"Test_UploadProfilePicture":1934.4159,"Test_VerifyFieldLevelErrorMessage":2628.483,"Test_VerifyLogoutFunctionality":2156.3679,"Test_VerifyMandatoryFieldsWarning":1998.8384,"Test_VerifyNavigationBetweenSubmodules":1988.8836,"Test_VerifyPatientOverview":2085.0396,"Test_VerifyTooltipText":2313.4083,"Test_VerifyUserProfileNavigation":2050.6733,"TestVerifyVisitTypeDropdown":2084.5006 };
+  </script>
+  <div class="row">
+  </div>
+</div>
+<script>
+  var statusGroup = {
+    parentCount: 15,
+    childCount: 0,
+    grandChildCount: 0,
+    eventsCount: 15,
+
+passParent:0,failParent:15,warningParent:0,skipParent:0,    
+passChild:0,failChild:0,warningChild:0,skipChild:0,infoChild:0,    
+passGrandChild:0,failGrandChild:0,warningGrandChild:0,skipGrandChild:0,infoGrandChild:0,    
+passEvents:0,failEvents:15,warningEvents:0,skipEvents:0,infoEvents:0,  };
+</script>
+
+    </div>
+   </div>
+  </div>
+ </div>
+ <script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c439bdbc7bade3d85af3b90e9e69c30ebc87445f/spark/js/spark-script.js"></script>
+<script type='text/javascript'></script>
+</body>
+</html>
