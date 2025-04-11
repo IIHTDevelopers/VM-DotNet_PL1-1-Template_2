@@ -57,7 +57,7 @@ namespace DotNetSelenium.TestCases
             loginPage.PerformLogin();
         }
 
-        [Test1]
+        [Test]
         public void TestVerifyVisitTypeDropdown()
         {
             // Calling the method to verify visit type dropdown functionality
